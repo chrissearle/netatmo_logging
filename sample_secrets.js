@@ -4,5 +4,9 @@ export default {
         "client_secret": "",
         "username": "",
         "password": "",
+    },
+    "logstash": {
+        "host": "",
+        "port": 0
     }
 }
