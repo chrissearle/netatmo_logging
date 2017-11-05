@@ -10,7 +10,8 @@
     "winston-logstash": "^0.3.0"
   },
   "scripts": {
-    "start": "babel-node index.js --presets es2015"
+    "start": "babel-node index.js --presets es2015",
+    "package": "docker build -t chrissearle/netatmo:latest ."
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
