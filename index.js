@@ -32,7 +32,7 @@ const getStationsData = (err, devices) => {
             "tags": [ 'netatmo', 'weather' ]
         }
 
-        logger.info(`Netatmo station ${data.station} status`, deviceData)
+        logger.info(`Netatmo station ${deviceData.station} status`, deviceData)
 
         device.modules.forEach((component) => {
             const data = {
