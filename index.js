@@ -23,6 +23,7 @@ const getStationsData = (err, devices) => {
     devices.forEach((device) => {
         const deviceData = {
             "station": device.station_name,
+            "label": device.station_name,
             "wifi_status": device.wifi_status,
             "noise": device.dashboard_data.Noise,
             "temperature": device.dashboard_data.Temperature,
@@ -37,6 +38,7 @@ const getStationsData = (err, devices) => {
         device.modules.forEach((component) => {
             const data = {
                 "module": component.module_name,
+                "label": component.module_name,
                 "battery": component.battery_percent,
                 "rf": component.rf_status,
                 "last_seen": component.last_seen,
